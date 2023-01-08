@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# git
+Git-2.39.0.2-64-bit.exe
+
 # C extensions
 *.so
 
