@@ -13,9 +13,9 @@ Learning to implement an end to end ML project.
 ### Configurations and git related steps
 1. Create a new environment - whenever we create a new project
 
-'''
+```
 conda create -p venv python==3.7 -y
-'''
+```
 
 2. Activate the new environment
 
@@ -28,9 +28,9 @@ Or go to the file you want to work on and change the kernel to the environment w
 3. Create a requirements.txt file where you list all the libraries you need for your project. 
 Then we can install them as follows:
 
-...
+```
 pip install -r requirements.txt
-...
+```
 
 4. Configure your git CLI to connect it to your Github account
 
