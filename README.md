@@ -19,9 +19,9 @@ conda create -p venv python==3.7 -y
 
 2. Activate the new environment
 
-'''
+```
 conda activate venv/
-'''
+```
 
 Or go to the file you want to work on and change the kernel to the environment we just created.
 
@@ -34,7 +34,15 @@ pip install -r requirements.txt
 
 4. Configure your git CLI to connect it to your Github account
 
-'''
+```
 git config --global user.name "your user name"
 git config --global user.email "email id used for your git account"
-'''
+```
+5. Basic git commands
+
+```
+git add file name (or . for all files)
+git status
+git commit -m "your message"
+git push <remote> <branch>
+```
