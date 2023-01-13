@@ -46,3 +46,7 @@ git status
 git commit -m "your message"
 git push <remote> <branch>
 ```
+
+### Building a web application
+
+I create a python file app.py that contains the code to build the web application.  
