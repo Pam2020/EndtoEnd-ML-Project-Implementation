@@ -1,3 +1,53 @@
-<h1>
-Welcome to the home page!
-</h1>
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Logistic regression employee left company prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="age" placeholder="age" required="required" /><br>
+    	<input type="text" name="frequency_of_travel" placeholder="frequency_of_travel" required="required" /><br>
+        <input type="text" name="department" placeholder="department" required="required" /><br>
+        <input type="text" name="commuting_distance" placeholder="commuting_distance" required="required" /><br>
+        <input type="text" name="education" placeholder="education" required="required" /><br>
+        <input type="text" name="satisfaction_with_environment" placeholder="satisfaction_with_environment" required="required" /><br>
+        <input type="text" name="gender" placeholder="gender" required="required" /><br>
+        <input type="text" name="seniority_level" placeholder="seniority_level" required="required" /><br>
+        <input type="text" name="position" placeholder="position" required="required" /><br>
+        <input type="text" name="satisfaction_with_job" placeholder="satisfaction_with_job" required="required" /><br>
+        <input type="text" name="married_or_single" placeholder="married_or_single" required="required" /><br>
+        <input type="text" name="last_raise_pct" placeholder="last_raise_pct" required="required" /><br>
+        <input type="text" name="last_performance_rating" placeholder="last_performance_rating" required="required" /><br>
+        <input type="text" name="total_years_working" placeholder="total_years_working" required="required" /><br>
+        <input type="text" name="years_at_company" placeholder="years_at_company" required="required" /><br>
+        <input type="text" name="years_in_current_job" placeholder="years_in_current_job" required="required" /><br>
+        <input type="text" name="years_since_last_promotion" placeholder="years_since_last_promotion" required="required" /><br>
+        <input type="text" name="years_with_current_supervisor" placeholder="years_with_current_supervisor" required="required" /><br>
+
+       
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>
